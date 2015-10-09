@@ -47,7 +47,7 @@ a {
   float: left;
 }
 .ks-main-header .ks-profile-img img {
-  border-radius: 100px;
+  border-radius: 76px;
   height: 150px;
   width: 150px;
   margin: 10px 50px;
@@ -258,7 +258,7 @@ a {
   /* smooth scrolling on touch devices */
   -webkit-overflow-scrolling: touch;
 }
-.ks-sub-pages-contaent {
+.ks-sub-pages-content {
   color: #424f5c;
 }
 .ks-sub-pages-content p {
@@ -293,7 +293,191 @@ a {
   
 }
 
+#tab-about-me .ks-sub-pages-header h1 {
+  background-color:#5555FF;
+}
+
+#tab-about-me .ks-sub-pages-header {
+  font-style:italic;
+  text-align:center;
+  font-size:18px;
+  -webkit-animation: spin 2s ease-in-out ;
+   animation: spin 2s ease-in-out ;
+}
+
+@-webkit-keyframes spin {
+  0% {left:50px;}
+}
+
+@keyframes spin {
+  0% {left:50px;}
+}
+#tab-about-me .ks-sub-pages-header h1:hover {
+  background: red;
+  transition: all 2s ease;
+  -webkit-transition: all 2s ease; /* Safari 3.1 to 6.0 */
+}
+
+#tab-about-me .ks-sub-pages-container .ks-sub-pages-content {
+  border: 2px solid black;
+  background-color:#eee;
+}
+
+#tab-about-me .ks-sub-pages-container img {
+  width:600px;
+  margin: 5px auto;
+}
+
+#tab-about-me .ks-sub-pages-container p {
+  color:red;
+  width: 600px; 
+  margin-top: 10px; 
+  color: #9E1603;
+  text-align: justify;
+}
+
+/* resume page content*/
+
+#tab-resume .ks-sub-pages-header {
+  font-style:italic;
+  text-align:center;
+  font-size:18px;
+ } 
 
 
+.ks-sub-pages-content .img-left img{
+  border-radius: 100px; 
+  height: 150px; 
+  width: 150px; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+ }
+
+.ks-sub-pages-content .index{
+  border-bottom: 2px solid gray; 
+  padding-bottom: 10px; 
+  padding: 10px; 
+}
+
+.ks-sub-pages-container .ks-sub-pages-content .index .block1-right .color{
+  color:#9E1603;
+}
+.ks-sub-pages-content .index .block1-left {
+  float: left; 
+  margin: 0 0 15px 0; 
+  width: 350px;
+  color: black;
+}
+
+.ks-sub-pages-content .index .block1-right{
+  float: right; 
+  width: 350px; 
+  margin: 0 0 15px 0; 
+  padding-right: 40px; 
+  text-align: right;
+}
+
+/* profile section*/
+.ks-sub-pages-content .profile .block2-left h4{
+  font-style: italic; 
+  color: #9E1603;
+}
+.ks-sub-pages-content .profile{
+  border-bottom: 2px solid gray; 
+  padding: 10px;
+}
+.ks-sub-pages-content .profile .block2-left{
+  float: left; 
+  margin: 15px; 
+}
+
+.ks-sub-pages-content .profile .block2-right{
+  float: right;   
+  width: 565px;
+  color: black;
+}
+
+/*technical section*/
+.ks-sub-pages-content .technical .block4-left h4{
+  font-style: italic; 
+  color: #9E1603;
+}
+.ks-sub-pages-content .technical{
+  border-bottom: 2px solid gray; 
+  padding: 10px;
+}
+.ks-sub-pages-content .technical .block4-left{
+  float: left;
+  margin: 15px;
+}
+.ks-sub-pages-content .technical .block4-right{
+  float: right;
+  width: 600px;
+}
+.ks-sub-pages-content .technical .block4-right ul{
+  float: left;
+  width: 180px;
+}
 
 
+/*experience section*/
+.ks-sub-pages-content .experience .block5-left h4{
+  font-style: italic; 
+  color: #9E1603;
+}
+.ks-sub-pages-content .experience .block5-left{
+  float: left; 
+  margin: 15px;
+}
+.ks-sub-pages-content .experience .block5-right {
+  float: right;
+  width: 600px;
+}
+.ks-sub-pages-content .experience .block5-right{
+  float: right;
+  width: 600px;
+}
+.ks-sub-pages-content .experience{
+  border-bottom: 2px solid gray; 
+  padding: 10px;
+}
+.ks-sub-pages-content .experience .block6-right{
+  float: left; 
+  margin: 40px; 
+}
+.ks-sub-pages-content .experience .block6-right {
+  float: right;width: 555px; 
+  border-top: 2px solid gray; 
+  margin: 30px 40px 40px 40px; 
+  padding: 20px 0 0 0;
+}
+
+/*education section*/
+.ks-sub-pages-content .education .block7-left h4{
+  font-style: italic; 
+  color: #9E1603;
+}
+.ks-sub-pages-content .education{
+  border-bottom: 2px solid gray; 
+  padding: 10px;
+}
+.ks-sub-pages-content .education .block7-left{
+  float: left;
+   margin: 40px; 
+   margin: 15px 0 0 15px;
+}
+.ks-sub-pages-content .education .block7-right {
+  float: right; 
+  width: 600px; 
+  margin-top: 20px;
+}
+
+.ks-sub-pages-content .footer{
+  float: right; 
+  margin:10px;
+  margin-right: 200px;
+}
+.ks-sub-pages-content .footer .browncolor{
+  color: #9E1603;
+}
