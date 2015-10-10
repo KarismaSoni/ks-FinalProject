@@ -609,6 +609,9 @@ footer .social-media a {
   .ks-main-header .ks-my-info { 
     width: 100%;
   }
+  #tab-contact-me .ks-contact-form .ks-email {
+    margin-right:10px; 
+  }
 }
 
 @media all and (max-width:320px) {
