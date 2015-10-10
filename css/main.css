@@ -610,3 +610,9 @@ footer .social-media a {
     width: 100%;
   }
 }
+
+@media all and (max-width:320px) {
+  .ks-my-info ul li h4 {
+    width: auto;
+  }
+}
