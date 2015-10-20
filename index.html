@@ -57,9 +57,6 @@
 				</ul>
 			</div>
 		</header>
-		<div class="slider">
-			 <!--slider goes here -->
-		</div>
 		<nav>
 			<ul class="tabs">
 				<li data-tab="tab-about-me">
@@ -78,9 +75,9 @@
 		</nav>
 		<footer class="cf">
 			<div class="social-media">
-				<a href="#" class="icon facebook"></a>
-				<a href="#" class="icon linkedin"></a>
-				<a href="#" class="icon github"></a>
+				<a href="https://www.facebook.com/" target="_blank" class="icon facebook"></a>
+				<a href="https://in.linkedin.com/pub/karisma-soni/a1/4a6/a59" target="_blank" class="icon linkedin"></a>
+				<a href="https://github.com/KarismaSoni" target="_blank" class="icon github"></a>
 			</div>
 			<p class="ks-copy">&copy; 2015 Karisma Soni</p>
 		</footer>
@@ -169,31 +166,31 @@
 		<div class="ks-sub-pages-container">
 			<div class="ks-sub-pages-content">
 				<div class="ks-portfolio cf">
-					<a href=""><img src="http://placehold.it/250x150"></a>
+					<a href=""><img src="C:\Users\Karisma Soni\Desktop\images finalproject\myfirstwebsitepage.png"></a>
 					<div class="ks-portfolio-demo">
-						<h3>Temprature Converter</h3>
-						<a href="">Demo</a>
+						<h3>My First Website page</h3>
+						<a href="https://github.com/KarismaSoni/mywebsite" target="_blank">Demo</a>
 					</div>
 				</div>
 				<div class="ks-portfolio cf">
-					<a href=""><img src="http://placehold.it/250x150"></a>
+					<a href=""><img src="C:\Users\Karisma Soni\Desktop\images finalproject\mycompanyproducts.png"></a>
 					<div class="ks-portfolio-demo">
-						<h3>Temprature Converter</h3>
-						<a href="">Demo</a>
+						<h3>Company Products page</h3>
+						<a href="https://github.com/KarismaSoni/homework-1" target="_blank"">Demo</a>
 					</div>
 				</div>
 				<div class="ks-portfolio cf">
-					<a href=""><img src="http://placehold.it/250x150"></a>
+					<a href=""><img src="C:\Users\Karisma Soni\Desktop\images finalproject\Temeratureconverter.png"></a>
 					<div class="ks-portfolio-demo">
 						<h3>Temprature Converter</h3>
-						<a href="">Demo</a>
+						<a href="http://karismasoni.github.io/tempconverter/" target="_blank">Demo</a>
 					</div>
 				</div>
 				<div class="ks-portfolio cf">
-					<a href=""><img src="http://placehold.it/250x150"></a>
+					<a href=""><img src="C:\Users\Karisma Soni\Desktop\images finalproject\carousel.png"></a>
 					<div class="ks-portfolio-demo">
-						<h3>Temprature Converter</h3>
-						<a href="">Demo</a>
+						<h3>Carousel</h3>
+						<a href="http://karismasoni.github.io/carousel/">Demo</a>
 					</div>
 				</div>
 			</div>
@@ -210,11 +207,13 @@
 			<div class="ks-sub-pages-content">
 				<div id="map"></div>
 				<div class="ks-contact-form">
-					<form>
-						<input type="text" class="ks-name" placeholder="Your Name">
-						<input type="email" class="ks-email" id="exampleInputEmail1" placeholder="Your E-mail">
-						<textarea class="ks-textarea" id="comment" placeholder="Message"></textarea>       
-						<button>Send Message</button>            
+					<form id="ks-form">
+						<p id="ks-return-message"></p>
+						<p class="ks-error-message">Please Enter All Required Field.</p>
+						<input type="text" class="ks-name" id="name" placeholder="Your Name">
+						<input type="email" class="ks-email" id="email" placeholder="Your E-mail">
+						<textarea class="ks-textarea" id="message" placeholder="Message"></textarea>       
+						<button id="submit-form">Send Message</button>            
 					</form>
 				</div>
 			</div>
@@ -222,8 +221,8 @@
 	</div>
 	
 	<script src="js/jquery-2.1.1.js"></script>
-	<script src="js/main.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/main.js"></script>
     <script>
       function initialize() {
         var mapCanvas = document.getElementById('map');

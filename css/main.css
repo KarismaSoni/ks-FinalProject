@@ -74,13 +74,6 @@ a.github:hover {
 }
 
 /* Main Styles */
-.ks-slide-left { 
-  position: absolute; 
-  width: 50%; 
-  left: 0; 
-  margin: 0 !important;
-  border: none !important;
-}
 .ks-main-content { 
   text-align: center;
   max-width: 768px; 
@@ -88,6 +81,15 @@ a.github:hover {
   border: 2px solid #D8D8D8;
   padding: 0 40px 50px;
   background: url('../images/crossword.png');
+}
+.ks-slide-left { 
+  position: absolute; 
+  width: 50%; 
+  left: 0; 
+  margin: 0 !important;
+  border: none !important;
+  max-width: 100%;
+  height: 100%;
 }
 
 .ks-main-header .ks-profile-img { 
@@ -319,8 +321,6 @@ a.github:hover {
 }
 /* Content inside the sub page - END */
 
-.slider { height: 200px; background: #eee; }
-
 /* about me page */
 #tab-about-me .ks-sub-pages-content {
   background-color: darkslategrey;
@@ -544,6 +544,17 @@ a.github:hover {
   font-size: 14px;
   color: #ffffff;
   border-radius: 3px;
+}
+#ks-return-message{
+  font-size:14px;
+  color:green;
+  text-align:center;
+}
+.ks-error-message { 
+  padding: 10px;
+  color: #fff;
+  border-radius: 3px;
+  background: red;
 }
 
 footer { 

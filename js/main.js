@@ -16,6 +16,32 @@ jQuery(document).ready(function($){
 			event.preventDefault();
 		}
 	});
+	
+	// Contact Form
+	$('.ks-error-message').hide();
+	$("#submit-form").click(function (e) {
+		e.preventDefault();
+		var name = $("#name").val();
+		var email = $("#email").val();
+		var message = $("#message").val();
+		$("#ks-return-message").empty();
+		// Checking for blank fields.
+		if (name == '' || email == '') {
+			$('.ks-error-message').show();
+		} else {
+			$('.ks-error-message').hide();
+			$.post("php/contact_form.php", {
+				name: name,
+				email: email,
+				message: message
+			}, function (data) {
+				$("#ks-return-message").append(data);
+				if (data == "Thank You for contacting me. I will get back to you soon.") {
+					// $("#form input").val("");; // To reset form fields on success.
+				}
+			});
+		}
+	});
 });
 
 
