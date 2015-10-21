@@ -30,14 +30,17 @@ jQuery(document).ready(function($){
 			$('.ks-error-message').show();
 		} else {
 			$('.ks-error-message').hide();
-			$.post("php/contact_form.php", {
-				name: name,
-				email: email,
-				message: message
-			}, function (data) {
-				$("#ks-return-message").append(data);
-				if (data == "Thank You for contacting me. I will get back to you soon.") {
-					// $("#form input").val("");; // To reset form fields on success.
+			$.ajax({
+				url: "//formspree.io/Karismavsoni93@gmail.com",
+				method: "POST",
+				data: {
+					name: name,
+					email: email,
+					message: message
+				},
+				dataType: "json",
+				success: function(data) {
+					$('#ks-form')[0].reset();
 				}
 			});
 		}
