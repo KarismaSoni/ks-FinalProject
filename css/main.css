@@ -623,6 +623,9 @@ footer .social-media a {
   #tab-contact-me .ks-contact-form .ks-email {
     margin-right:10px; 
   }
+  #tab-contact-me .ks-contact-form input { 
+    width: auto;
+  }
 }
 
 @media all and (max-width:320px) {
