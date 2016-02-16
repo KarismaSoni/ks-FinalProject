@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
 		$('.ks-sub-pages').removeClass('is-visible');
 		$("#" + tabId).addClass('is-visible');
 	});
-	//clode the lateral panel
+	//close the lateral panel
 	$('.ks-sub-pages').on('click', function(event){
 		if( $(event.target).is('.ks-sub-pages') || $(event.target).is('.ks-sub-pages-close') ) { 
 			$('.ks-sub-pages').removeClass('is-visible');
